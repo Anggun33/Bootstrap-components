@@ -6,17 +6,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
 
-    <title>Hello, world!</title>
+    <title>Komponen Bootstrap</title>
 </head>
 <body>
 
+<div class="nav">
+    <li class="nav-item active">
+        <a href="https://getbootstrap.com/docs/4.0/components/navs/" class="nav-link"Link>Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a href="https://getbootstrap.com/docs/4.0/components/navs/" class="nav-link"Link>Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link"Link>Link 2</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link disabled"Link>Link nonaktif</a>
+    </li>
+</div>
+
+<nav class="nav">
+    <a href="#" class="nav-link active">Link Aktif</a>
+    <a href="#" class="nav-link">Link 1</a>
+    <a href="#" class="nav-link">Link 1</a>
+    <a href="#" class="nav-link disabled">Link Nonaktif</a>
+</nav>
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a href="" class="nav-link active">Link Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link ">Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link ">Link 2</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link disabled">Link Nonaktif</a>
+    </li>
+</ul>
+
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a href="" class="nav-link active">Link Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link ">Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link ">Link 2</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link disabled">Link Nonaktif</a>
+    </li>
+</ul>
+
+<ul class="nav flex-column" style="margin-bottom: 30px;">
+    <li class="nav-item">
+        <a href="" class="nav-link active">Link Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link ">Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link ">Link 2</a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link disabled">Link Nonaktif</a>
+    </li>
+</ul>
+
+<h3>Navigasi dengan Tab</h3>
+<!-- navigasi dengan tab -->
+<ul class="nav nav-tabs" style="margin-bottom: 30px;">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Link Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Link Nonaktif</a>
+    </li>
+</ul>
+
+
+
+<h3>Menggunakan .nav-pills</h3>
+<ul class="nav nav-pills" style="margin-bottom: 30px;">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Link Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Link Nonaktif</a>
+    </li>
+</ul>
+
+
+
+<h3>Menggunakan fill dan pills</h3>
+<ul class="nav nav-pills nav-fill" style="margin-bottom: 30px;">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Link Aktif</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Longer nav link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Link Nonaktif</a>
+    </li>
+</ul>
+
+
+<h3>Menggunakan dropdown</h3>
+<ul class="nav nav-tabs" style="margin-bottom: 30px;">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+            <div class=""></div>
+            <a class="dropdown-item" href="#">Link 4</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Link Nonaktif</a>
+    </li>
+</ul>
+
+
+
+<h2>nav dengan perlakuan Javascript</h2>
+
+<!-- Ini menggunakan script -->
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 30px;">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">Ini isi home</div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...Ini isi profile</div>
+    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...Ini isi message</div>
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...Ini isi setting</div>
+</div>
+
+<script>
+    $(function () {
+        $('#myTab li:last-child a').tab('show')
+    })
+</script>
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 100px;">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content ">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">Ini Isinya Home</div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">Ini isi Profile</div>
+    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Ini isi Pesan</div>
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">Ini Isi setting</div>
+</div>
+
+
+
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"  style="margin-bottom: 50px;">
+    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...jlasdkjalsdjlaksjdlajdlkasjdlakjdsla</div>
+    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+</div>
+
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+</div>
+
+<script>
+    $(function () {
+        $('#myTab li:last-child a').tab('show')
+    })
+</script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
 </body>
 </html>
